@@ -1,0 +1,1227 @@
+/* jost-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/jost-v15-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/jost-v15-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jost-v15-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jost-v15-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jost-v15-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/jost-v15-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/jost-v15-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #F7FAFA; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Jost';
+    /* font-family: 'Jost', sans-serif; */
+}
+
+.main_head {
+    padding: 55px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+:root {
+    --black-color: #00000080;
+    --main-color: #236160;
+}
+
+/* header */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.head .head_logo {
+    width: 5%;
+}
+
+.head .head_logo img {
+    width: 100%;
+}
+
+.head nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+.head nav ul li {
+    list-style: none;
+}
+
+.head nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.head nav ul li:first-child a {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.head nav ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.head::after {
+    content: url('../img/bg_head_pink.png');
+    position: absolute;
+    left: -100px;
+    top: -200px;
+    z-index: -1;
+}
+
+.head::before {
+    content: url('../img/bg_head_blue.png');
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: -1;
+}
+
+/* end header */
+/* hero */
+.hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero .hero_left {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.hero .hero_left h2 {
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.hero .hero_left h1 {
+    font-size: 70px;
+    color: black;
+    font-weight: 800;
+}
+
+.hero .hero_left h3 {
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.hero .hero_left h3 span {
+    color: var(--main-color);
+}
+
+.hero .hero_left p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 30px 0;
+    width: 85%;
+}
+
+.hero .hero_left .hero_icon {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero_left .hero_icon h4 {
+    font-size: 22px;
+}
+
+.hero .hero_left .hero_icon a {
+    padding: 0px 10px;
+    width: 65px;
+    height: 45px;
+}
+
+.hero .hero_left .hero_icon a img {
+    width: 100%;
+}
+
+.hero .hero_right {
+    width: 50%;
+    position: relative;
+}
+
+.hero .hero_right img {
+    width: 100%;
+}
+
+.hero .hero_right::after {
+    content: '';
+    background-image: url(../img/hero_2.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-position: center; */
+    /* z-index: 99; */
+    top: 255px;
+    left: 5px;
+    position: absolute;
+    width: 98%;
+    height: 54%;
+    animation: hero_i 2s ease-in-out infinite;
+}
+
+@keyframes hero_i {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero::after {
+    content: url('../img/bg_hero_pink.png');
+    position: absolute;
+    right: 270px;
+    bottom: -111px;
+    z-index: -1;
+}
+
+.hero::before {
+    content: url('../img/bg_hero_blue.png');
+    position: absolute;
+    right: 480px;
+    bottom: -111px;
+    z-index: -1;
+}
+
+/* end hero */
+/* about */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about .about_left {
+    width: 60%;
+}
+
+.about .about_left h3 {
+    font-size: 35px;
+    width: 60%;
+    color: var(--main-color);
+}
+
+.about .about_left p {
+    font-size: 22px;
+    width: 78%;
+    padding: 25px 0 40px 0;
+}
+
+.about .about_left h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.about .about_left .about_l {
+    display: flex;
+}
+
+.about .about_left .about_l ul {
+    width: 50%;
+}
+
+.about .about_left .about_l ul li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.about .about_left .about_l ul li img {
+    margin-right: 10px;
+}
+
+.about .about_right {
+    width: 38%;
+}
+
+.about .about_right h4 {
+    font-size: 24px;
+}
+
+.about .about_right .about_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about_right .about_f .about_blank {
+    background-color: #DEE3EF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 12px 0 25px 0;
+}
+
+.about .about_right .about_f .about_blank .about_data {
+    width: 0%;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: 2s all linear;
+    position: relative;
+    border-radius: 10px;
+}
+
+.about .about_right:hover .about_f .about_blank .about_data {
+    width: 95%;
+}
+
+.about .about_right .about_p .about_blank {
+    background-color: #DEE3EF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 12px 0 25px 0;
+}
+
+.about .about_right .about_p .about_blank .about_data {
+    width: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: 2s all linear;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about .about_right:hover .about_p .about_blank .about_data {
+    width: 85%;
+}
+
+.about .about_right .about_i .about_blank {
+    background-color: #DEE3EF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 12px 0 25px 0;
+}
+
+.about .about_right .about_i .about_blank .about_data {
+    width: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: 2s all linear;
+    position: relative;
+    border-radius: 10px;
+}
+
+.about .about_right:hover .about_i .about_blank .about_data {
+    width: 80%;
+}
+
+.about .about_right .about_xd .about_blank {
+    background-color: #DEE3EF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 12px 0 25px 0;
+}
+
+.about .about_right .about_xd .about_blank .about_data {
+    width: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: 2s all linear;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about .about_right:hover .about_xd .about_blank .about_data {
+    width: 65%;
+}
+
+.about .about_right .about_after .about_blank {
+    background-color: #DEE3EF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 12px 0 0 0;
+}
+
+.about .about_right .about_after .about_blank .about_data {
+    width: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    transition: 2s all linear;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about .about_right:hover .about_after .about_blank .about_data {
+    width: 70%;
+}
+
+/* end about */
+/* resume */
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.resume .resume_left {
+    width: 48%;
+}
+
+.resume .resume_left h3 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.resume .resume_left .resume_top {
+    margin: 20px;
+    border: 2px solid var(--main-color);
+    padding: 5px 5px 5px 15px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left .resume_top:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.resume .resume_left .resume_top:hover h4 {
+    color: white;
+}
+
+.resume .resume_left .resume_top:hover::before {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_left .resume_top:hover::after {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_left .resume_top::after {
+    content: "2020";
+    position: absolute;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: -17px;
+    right: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 0;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left .resume_top::before {
+    content: '\f19d';
+    font: normal normal normal 22px/1 FontAwesome;
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: 50px;
+    left: -32px;
+    z-index: 6;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left .resume_bottum {
+    background-color: white;
+    margin: 20px;
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left .resume_bottum:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.resume .resume_left .resume_bottum:hover h4 {
+    color: white;
+}
+
+.resume .resume_left .resume_bottum:hover::before {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_left .resume_bottum:hover::after {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_left .resume_bottum::after {
+    content: '2022';
+    position: absolute;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: -17px;
+    font-weight: 600;
+    right: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 0;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left .resume_bottum::before {
+    content: '\f19d';
+    font: normal normal normal 22px/1 FontAwesome;
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: 50px;
+    left: -32px;
+    z-index: 6;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_left h4 {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.resume h5 {
+    font-size: 20px;
+    padding: 15px 0 0 25px;
+}
+
+.resume p {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 10px 0 20px 25px;
+
+}
+
+.resume .resume_right {
+    width: 48%;
+}
+
+.resume .resume_right h3 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.resume .resume_right h4 {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.resume .resume_right .resume_top {
+    background-color: white;
+    margin: 20px;
+    border: 2px solid var(--main-color);
+    padding: 5px 5px 5px 15px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_right .resume_top:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.resume .resume_right .resume_top:hover h4 {
+    color: white;
+}
+
+.resume .resume_right .resume_top:hover::before {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_right .resume_top:hover::after {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_right .resume_top::after {
+    content: "2022-2023";
+    position: absolute;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: -17px;
+    font-weight: 600;
+    right: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 0;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_right .resume_top::before {
+    content: "\f0b1";
+    font: normal normal normal 22px/1 FontAwesome;
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: 50px;
+    left: -32px;
+    z-index: 6;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_right .resume_bottum {
+    background-color: white;
+    margin: 20px;
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_right .resume_bottum:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.resume .resume_right .resume_bottum:hover h4 {
+    color: white;
+}
+
+.resume .resume_right .resume_bottum:hover::before {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_right .resume_bottum:hover::after {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.resume .resume_right .resume_bottum::after {
+    content: '2024 - Current';
+    position: absolute;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: -17px;
+    right: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 0;
+    transition: 0.5s all linear;
+}
+
+.resume .resume_right .resume_bottum::before {
+    content: "\f0b1";
+    font: normal normal normal 22px/1 FontAwesome;
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    top: 50px;
+    left: -32px;
+    z-index: 6;
+    transition: 0.5s all linear;
+}
+
+/* end resume */
+/* service */
+.service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.service .service_data {
+    background-color: #E8EFEF;
+    padding: 15px 15px 10px 15px;
+    border-radius: 15px;
+    transition: 0.5s all linear;
+    position: relative;
+}
+
+.service .service_data::before {
+    transition: 0.5s all linear;
+    background-color: var(--main-color);
+    height: 0;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.service .service_data:hover::before {
+    height: 100%;
+}
+
+.service .service_data:hover {
+    /* background-color: var(--main-color);     */
+    color: white;
+    z-index: 99;
+}
+
+.service .service_data:hover .inner_service h4 {
+    color: white;
+}
+
+.service .service_data .inner_service {
+    display: flex;
+    padding: 20px 0;
+}
+
+.service .service_data .inner_service div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.service .service_data .inner_service div h2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 800;
+    align-items: center;
+    transition: 0.5s all linear;
+    z-index: 99;
+}
+
+.service .service_data:hover .inner_service div h2 {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.service .service_data:hover .inner_service div::after {
+    background-color: #4F8180;
+}
+
+.service .service_data .inner_service div::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #C1D3D2;
+    top: -35px;
+    transition: 0.5s all linear;
+}
+
+.service .service_data .inner_service h4 {
+    font-size: 24px;
+    padding-left: 20px;
+    color: var(--main-color);
+    text-align: center;
+    transition: 0.5s all linear;
+}
+
+.service .service_data p {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* end service */
+/* portfolio */
+.portfolio .portfolio_nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.portfolio .portfolio_nav a {
+    font-size: 25px;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    font-weight: 500;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 10px;
+    transition: 0.5s all linear;
+}
+
+.portfolio .portfolio_nav a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.portfolio .portfolio_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px 80px;
+    padding: 50px 0;
+}
+
+.portfolio .portfolio_data img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+/* end portfolio */
+/* touch */
+.touch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.touch .touch_left {
+    width: 65%;
+}
+
+.touch .touch_left .touch_head h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.touch .touch_left .touch_head h2 {
+    font-size: 38px;
+}
+
+.touch .touch_left form {
+    display: flex;
+    flex-flow: column;
+}
+
+.touch .touch_left form input {
+    margin: 20px 0 0 0;
+    padding: 14px;
+    border: 3px solid #F2F3F3;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.touch .touch_left form textarea {
+    margin: 20px 0 0 0;
+    padding: 14px;
+    border: 3px solid #F2F3F3;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Jost';
+}
+
+.touch .touch_left form input:focus {
+    outline: none;
+    border: 3px solid var(--main-color);
+}
+
+.touch .touch_left form textarea:focus {
+    outline: none;
+    border: 3px solid var(--main-color);
+}
+
+.touch .touch_left form .submit {
+    width: 32%;
+    font-size: 28px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    border: 2px solid var(--main-color);
+    transition: 0.5s all linear;
+    margin: 25px 0;
+}
+
+.touch .touch_right {
+    width: 30%;
+}
+
+.touch .touch_right .footer_data {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.touch .touch_right .footer_data .footer_icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    margin: 0 20px 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+.touch .touch_right .footer_data .footer_icon i {
+    font-size: 30px;
+}
+
+.touch .touch_right .footer_data .footer_taxt h4 {
+    font-size: 24px;
+}
+
+.touch .touch_right .footer_data .footer_taxt p {
+    font-size: 22px;
+}
+
+.touch .touch_right .footer_data .footer_taxt {
+    width: 77%;
+}
+
+/* end touch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1250px){
+    .container{
+        width: 1050px;
+    }
+    .hero .hero_left h2{
+        font-size: 60px;
+    }
+    .hero .hero_left h1{
+        font-size: 60px;
+    }
+} */
+/* @media (max-width:1050px){
+    .container{
+        width: 850px;
+    }
+    .hero .hero_left h2{
+        font-size: 50px;
+    }
+    .hero .hero_left h1{
+        font-size: 50px;
+    }
+} */
+@media (max-width:600px) {
+    .main_head img {
+        width: 600px;
+    }
+
+    .hero {
+        flex-flow: column-reverse;
+    }
+
+    .hero .hero_left {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero .hero_left h2 {
+        font-size: 100px;
+    }
+
+    .hero .hero_left h1 {
+        font-size: 100px;
+    }
+
+    .hero .hero_left h3 {
+        font-size: 60px;
+    }
+
+    .hero .hero_left p {
+        font-size: 55px;
+        line-height: 75px;
+    }
+
+    .hero .hero_left .hero_icon h4 {
+        font-size: 50px;
+    }
+
+    .hero .hero_left .hero_icon a img {
+        width: 60px;
+    }
+
+    .hero .hero_right {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .hero .hero_right::after {
+        top: 440px;
+        left: 10px;
+        width: 97%;
+        height: 56%;
+    }
+
+    @keyframes hero_i {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    /* about */
+    .about {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .about .about_left {
+        width: 100%;
+    }
+
+    .about .about_left h3 {
+        width: 60%;
+        font-size: 60px;
+    }
+
+    .about .about_left p {
+        font-size: 35px;
+        width: 70%;
+    }
+
+    .about .about_left h4 {
+        font-size: 40px;
+    }
+
+    .about .about_left .about_l ul li {
+        font-size: 32px;
+    }
+
+    .about .about_left .about_l ul li img {
+        width: 30px;
+    }
+
+    .about .about_right {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .about .about_right h4 {
+        font-size: 46px;
+    }
+
+    .about .about_right .about_f .about_blank {
+        height: 20px;
+    }
+
+    .about .about_right .about_p .about_blank {
+        height: 20px;
+    }
+
+    .about .about_right .about_i .about_blank {
+        height: 20px;
+    }
+
+    .about .about_right .about_xd .about_blank {
+        height: 20px;
+    }
+
+    .about .about_right .about_after .about_blank {
+        height: 20px;
+    }
+
+    /* resume */
+    .resume {
+        display: block;
+        padding: 0 30px;
+    }
+
+    .resume .resume_left,
+    .resume .resume_right {
+        width: 100%;
+    }
+
+    .resume .resume_left h3,
+    .resume .resume_right h3 {
+        font-size: 64px;
+    }
+
+    .resume .resume_left .resume_top,
+    .resume .resume_left .resume_bottum,.resume .resume_right .resume_top,.resume .resume_right .resume_bottum {
+        margin: 40px;
+        padding: 10px 30px;
+    }
+
+    .resume .resume_left .resume_top::after,
+    .resume .resume_left .resume_bottum::after,
+    .resume .resume_right .resume_top::after,
+    .resume .resume_right .resume_bottum::after {
+        font-size: 34px;
+        top: -30px;
+    }
+
+    .resume .resume_left h4,.resume .resume_right h4 {
+        font-size: 40px;
+    }
+
+    .resume h5 {
+        font-size: 32px;
+        padding: 15px 0 0 35px;
+    }
+
+    .resume p {
+        font-size: 30px;
+        line-height: 36px;
+        padding: 10px 20px 20px 40px;
+    }
+}
+
+@media (max-width:420px) {}
